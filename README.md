@@ -1,2 +1,2 @@
 # Demos
-Legacy 프롲젝트 
+Legacy 프로젝트 모음
