@@ -1,0 +1,190 @@
+
+가져와 바로 쓸 수 있는 도구
+https://www.w3schools.com/howto/default.asp
+https://doublesprogramming.tistory.com/category/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC
+
+정리 잘되어있는 프로그래밍 언어 배우기
+http://tcpschool.com/
+
+
+예제) 
+
+자바스크립트 등 예제
+http://abc1211.tistory.com/90
+
+흔한 개발자
+http://addio3305.tistory.com/category/Spring?page=2
+
+2017 게시판 및 기타 기능
+https://doublesprogramming.tistory.com/95
+
+게시판 및 기타 기능
+https://iluku.net/blog/archives/1398
+
+웹에서 자바스크립트
+https://opentutorials.org/course/1375/6762
+
+스프링 설정하기
+https://www.youtube.com/watch?v=6VbK6Y-9p20
+
+노드 js
+https://nodeschool.io/#workshoppers
+
+배우기
+freecodecamp
+
+면접 기초
+https://jeong-pro.tistory.com/category/%EC%8B%A0%EC%9E%85%20%EA%B0%9C%EB%B0%9C%EC%9E%90%20%EB%A9%B4%EC%A0%91%20%EA%B8%B0%EC%B4%88
+
+
+파이널 프로젝에서 사용
+
+ID 쿠키로 저장
+http://zero-gravity.tistory.com/245?category=557981
+
+AJAX로 로그인 ID 있는지 확인하기
+http://www.nextree.co.kr/p11205/
+
+AJAX로 데이터 넘기기
+http://zero-gravity.tistory.com/241?category=557981
+
+공공 데이터 사용하기 
+https://jeong-pro.tistory.com/143?category=793347
+
+카카오 로그인
+http://blog.naver.com/PostView.nhn?blogId=psj9102&logNo=220909364109&parentCategoryNo=&categoryNo=19&viewDate=&isShowPopularPosts=true&from=search
+https://medium.com/@panicrooms0/%EC%B9%B4%EC%B9%B4%EC%98%A4-kakao-%EB%A1%9C%EA%B7%B8%EC%9D%B8-login-api-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0-js-javascript-d12aac495da
+
+
+모든 건 데이타!!!!
+
+필수 요구사항
+ -데이터 컨테이너 + 컨테이너 매핑
+ -데이터 위치 <URI>
+ -데이터 가져오는/보내는 방법 <GET/POST>
+ -데이터 타입 <JSON,XML,HTML,VARCHAR,NUMBER,DATE,FORM,BUTTON,POJO>
+ -데이터 내용
+ -데이터 사이즈
+ -데이터 파라미터 <담고 있는 컨테이너 타입+내용물>
+ -데이터 리턴 값 <O/VOID>
+ -데이터 C/R/U/D
+ -데이터 설정 <필요한 lib-클래스,모듈>
+ 
+추가 요구사항
+ -데이터 이벤트 <SYNC, ASYNC: time-based>
+ -데이터 변경 타입
+ -데이터 반복 <index>
+ -데이터 소팅 <tempUse>
+ -데이터 필터링
+ -데이터 예외처리
+ -데이터 로깅
+ -데이터 묶음 번호/컨테이너
+ -데이터 생성,변경,소멸 
+ -데이터 기록 (역사)
+ 
+ ======================
+ AJAX설명
+ $.ajax({
+            url: 요청이 보내지는 곳,
+            type: http요청 방식 get/post,
+            success: http 요청 성공의 경우 동작할 함수,
+            error: http 요청 실패의 경우 동작할 함수,
+            complete: http 요청 완료 후 동작할 함수,
+            data: 서버로 넘어갈 값,
+            dataType: data의 타입,
+            global: 전역 함수 여부 true/false,
+            async: 동기 여부 true/false
+        });
+  
+ ======================
+ 
+ 
+  
+ ======================
+ CSS mouseover SCROLLING
+ 
+ <script type="text/javascript">
+function tabtest(tmp_tab) {
+	var i = 0;
+	for(i=1;i<=3;i++) 
+		document.getElementById("tmp_tab_"+i).style.display = "none";
+	
+	document.getElementById(tmp_tab).style.display = "";
+}
+function tabtest2(tmp_tab) {
+	var i = 0;
+	for(i=1;i<=5;i++) 
+		document.getElementById("tmp_tabs_"+i).style.display = "none";
+	
+	document.getElementById(tmp_tab).style.display = "";
+}
+</script>
+
+<a href="#100" onmouseover="tabtest('tmp_tab_1');">인기수업</a>
+<a href="#100" onmouseover="tabtest('tmp_tab_2');">디자인툴</a>
+<a href="#100" onmouseover="tabtest('tmp_tab_3');">실무역량</a>
+<div id="tmp_tab_1" style="width:100px;height:100px;background:blue;">
+1
+</div>
+<div id="tmp_tab_2" style="width:100px;height:100px;background:yellow;display:none;">
+2
+</div>
+<div id="tmp_tab_3" style="width:100px;height:100px;background:green;display:none;">
+3
+</div>
+
+<style type="text/css">
+.tmp_tab_bg {
+width:1000px;
+margin:0 auto;
+position:absolute;
+}
+.tmp_a {
+background:#ffffff;
+top:20px;
+right:20px;
+width:100px;
+height:150px;
+position:absolute;
+overflow-y:scroll;
+}
+.tmp_a a{
+display:block;
+width:100%;
+height:45px;
+line-height:45px;
+border:1px solid #e6e6e6;
+}
+</style>
+
+<div style="overflow:hidden;position:relative;">
+
+	<div class="tmp_tab_bg">
+		<div class="tmp_a">
+			<a href="#100" onmouseover="tabtest2('tmp_tabs_1');">인기수업</a>
+			<a href="#100" onmouseover="tabtest2('tmp_tabs_2');">디자인툴</a>
+			<a href="#100" onmouseover="tabtest2('tmp_tabs_3');">실무역량</a>
+			<a href="#100" onmouseover="tabtest2('tmp_tabs_4');">실무역량</a>
+			<a href="#100" onmouseover="tabtest2('tmp_tabs_5');">실무역량</a>
+		</div>
+	</div>
+		<div id="tmp_tabs_1" style="width:100%;height:300px;background:url(./images/office_bk.jpg) no-repeat center center;background-size:cover;">
+		1
+		</div>
+		<div id="tmp_tabs_2" style="width:100%;height:300px;background:yellow;display:none;">
+		2
+		</div>
+		<div id="tmp_tabs_3" style="width:100%;height:300px;background:green;display:none;">
+		3
+		</div>
+		<div id="tmp_tabs_4" style="width:100%;height:300px;background:red;display:none;">
+		4
+		</div>
+		<div id="tmp_tabs_5" style="width:100%;height:300px;background:orange;display:none;">
+		5
+		</div>
+
+</div>
+
+ 
+ ======================
